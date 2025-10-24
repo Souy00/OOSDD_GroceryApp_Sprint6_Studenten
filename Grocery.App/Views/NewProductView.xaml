@@ -1,0 +1,13 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grocery.App.Views.NewProductView"
+             Title="Nieuw Product">
+
+    <StackLayout Padding="20" Spacing="15">
+        <Entry Placeholder="Naam" Text="{Binding Name}" />
+        <Entry Placeholder="Prijs" Keyboard="Numeric" Text="{Binding Price}" />
+        <Entry Placeholder="Aantal" Keyboard="Numeric" Text="{Binding Quantity}" />
+        <DatePicker Date="{Binding ExpirationDate}" />
+        <Button Text="Opslaan" Command="{Binding SaveCommand}" />
+    </StackLayout>
+</ContentPage>
